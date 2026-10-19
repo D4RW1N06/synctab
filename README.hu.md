@@ -199,7 +199,7 @@ told be a saját nyelvi mappába (`%APPDATA%\SyncTab\lang`), és válaszd ki a m
 [Node.js](https://nodejs.org/) 20 vagy újabb kell (Node 24-gyel fejlesztve).
 
 ```bash
-git clone https://github.com/<neved>/synctab.git
+git clone https://github.com/D4RW1N06/synctab.git
 cd synctab
 npm install
 npm start          # elindítja a master alkalmazást

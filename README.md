@@ -200,7 +200,7 @@ into the custom language folder (`%APPDATA%\SyncTab\lang`) and pick it from the 
 You need [Node.js](https://nodejs.org/) 20 or newer (developed with Node 24).
 
 ```bash
-git clone https://github.com/<your-name>/synctab.git
+git clone https://github.com/D4RW1N06/synctab.git
 cd synctab
 npm install
 npm start          # runs the master app
