@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="searching">로컬 네트워크에서 마스터를 찾는 중…\n(컴퓨터와 같은 Wi-Fi여야 합니다.)</string>
+    <string name="found">찾은 마스터:</string>
+    <string name="manual">또는 주소를 직접 입력</string>
+    <string name="hint">예: 192.168.1.20:8080</string>
+    <string name="connect">연결</string>
+    <string name="no_webview">Android System WebView가 설치되어 있지 않습니다.</string>
+    <string name="enter_address">주소를 입력하세요.</string>
+    <string name="unreachable">이 주소에서 마스터에 연결할 수 없습니다.</string>
+    <string name="render_gone">뷰어가 중지되었습니다. 다시 연결하는 중…</string>
+</resources>

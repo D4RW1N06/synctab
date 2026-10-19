@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="searching">Suche nach einem Master im lokalen Netzwerk…\n(Er muss im selben WLAN sein wie der Computer.)</string>
+    <string name="found">Gefundene Master:</string>
+    <string name="manual">Oder Adresse manuell eingeben</string>
+    <string name="hint">z. B. 192.168.1.20:8080</string>
+    <string name="connect">Verbinden</string>
+    <string name="no_webview">Android System WebView ist nicht installiert.</string>
+    <string name="enter_address">Gib eine Adresse ein.</string>
+    <string name="unreachable">Der Master ist unter dieser Adresse nicht erreichbar.</string>
+    <string name="render_gone">Die Anzeige wurde beendet, verbinde erneut…</string>
+</resources>

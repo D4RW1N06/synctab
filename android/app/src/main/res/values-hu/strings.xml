@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="searching">Master keresése a helyi hálózaton…\n(Ugyanazon a Wi-Fi-n legyen, mint a gép.)</string>
+    <string name="found">Megtalált masterek:</string>
+    <string name="manual">Vagy add meg a címet kézzel</string>
+    <string name="hint">pl. 192.168.1.20:8080</string>
+    <string name="connect">Csatlakozás</string>
+    <string name="no_webview">Nincs telepítve az Android System WebView.</string>
+    <string name="enter_address">Adj meg egy címet.</string>
+    <string name="unreachable">A master nem érhető el ezen a címen.</string>
+    <string name="render_gone">A megjelenítő leállt, újracsatlakozás…</string>
+</resources>

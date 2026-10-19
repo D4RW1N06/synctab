@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">SyncTab</string>
+    <string name="searching">Searching for a master on the local network…\n(It must be on the same Wi-Fi as the computer.)</string>
+    <string name="found">Masters found:</string>
+    <string name="manual">Or enter the address manually</string>
+    <string name="hint">e.g. 192.168.1.20:8080</string>
+    <string name="connect">Connect</string>
+    <string name="no_webview">Android System WebView is not installed.</string>
+    <string name="enter_address">Enter an address.</string>
+    <string name="unreachable">The master can\'t be reached at this address.</string>
+    <string name="render_gone">The viewer stopped, reconnecting…</string>
+</resources>

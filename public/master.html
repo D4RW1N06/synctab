@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="master.docTitle">SyncTab – Master</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="i18n.js"></script>
+  <script src="/lib/alphatab/alphaTab.min.js"></script>
+  <script src="viewer.js"></script>
+</head>
+<body>
+  <div class="bar">
+    <span class="dot" id="conn" data-i18n-title="master.connection"></span>
+    <span class="title grow" id="title">No song loaded</span>
+    <div class="transport">
+      <button id="stop" data-i18n-title="master.stop">⏹</button>
+      <button id="play" class="primary" data-i18n-title="master.playTitle" disabled data-i18n="master.play">▶ Play</button>
+      <span class="time" id="time">0:00 / 0:00</span>
+      <label><span data-i18n="master.tempo">Tempo</span> <input type="range" id="speed" min="25" max="150" step="5" value="100"> <span id="speedVal">100%</span></label>
+      <label><input type="checkbox" id="metro"> <span data-i18n="metro.label">Metronome</span></label>
+      <select id="sound-type" data-i18n-title="click.sound"></select>
+      <input type="range" id="click-vol" min="0" max="100" value="80" data-i18n-title="master.clickVolume" style="width:80px">
+      <label><span data-i18n="master.countin">Count-in</span>
+        <select id="countin">
+          <option value="0" data-i18n="countin.off">Off</option>
+          <option value="1" data-i18n="countin.bar1">1 bar</option>
+          <option value="2" data-i18n="countin.bar2">2 bars</option>
+        </select>
+      </label>
+      <label><input type="checkbox" id="loop"> <span data-i18n="master.loop">Loop</span></label>
+      <label><input type="checkbox" id="sound" checked> <span data-i18n="master.sound">Sound</span></label>
+    </div>
+    <select id="profile" data-i18n-title="view.label">
+      <option value="tab" data-i18n="view.tab">Tab</option>
+      <option value="scoretab" data-i18n="view.scoretab">Score + Tab</option>
+      <option value="score" data-i18n="view.score">Score</option>
+    </select>
+    <button id="zoomOut" data-i18n-title="client.zoomOut">A−</button>
+    <button id="zoomIn" data-i18n-title="client.zoomIn">A+</button>
+    <button id="theme" data-i18n-title="master.themeToggle">◐</button>
+  </div>
+
+  <div class="stage">
+    <aside class="side">
+      <section>
+        <h3 data-i18n="songs.title">Songs</h3>
+        <ul class="list" id="songs"></ul>
+        <div class="drop" id="drop">
+          <span data-i18n="songs.drop">Drop .gp files here</span><br>
+          <button id="pick" style="margin-top:8px" data-i18n="songs.add">Add files…</button>
+          <input type="file" id="file" accept=".gp,.gp3,.gp4,.gp5,.gpx" multiple hidden>
+        </div>
+      </section>
+      <section>
+        <h3 data-i18n="tracks.title">Tracks (on this computer)</h3>
+        <ul class="list tracks" id="tracks"><li class="muted" data-i18n="tracks.none">No song</li></ul>
+      </section>
+      <section>
+        <h3 data-i18n="sync.title">Sync</h3>
+        <div class="muted" id="sync-info"></div>
+        <label class="muted" style="display:block;margin-top:8px"><span data-i18n="sync.offsetLabel">Audio delay correction</span>
+          <input type="range" id="audio-offset" min="-200" max="300" step="5" value="0" style="width:100%">
+          <span id="audio-offset-val">0 ms</span>
+        </label>
+        <div class="muted" style="font-size:12px;margin-top:4px" data-i18n="sync.offsetHint">If the cursor runs later or earlier than the sound, shift it here.</div>
+      </section>
+      <section>
+        <h3 data-i18n="connect.title">Connect</h3>
+        <div class="muted" data-i18n="connect.hint">Open this on the other devices (same Wi-Fi):</div>
+        <img class="qr" id="qr" data-i18n-alt="connect.qrAlt" alt="QR code">
+        <div class="addr" id="addrs"></div>
+      </section>
+      <section>
+        <h3><span data-i18n="devices.title">Connected devices</span> <span id="clientCount"></span></h3>
+        <ul class="list static" id="clients"></ul>
+      </section>
+      <section>
+        <h3 data-i18n="lang.title">Language</h3>
+        <select id="lang" style="width:100%"></select>
+        <div class="muted" id="lang-hint" style="font-size:12px;margin-top:6px"></div>
+      </section>
+    </aside>
+
+    <div class="viewport" id="viewport">
+      <div class="score" id="score"></div>
+      <div class="empty" id="empty" data-i18n="master.empty">Pick a song from the list on the left, or add a .gp file.</div>
+      <div class="countin" id="countin-view"></div>
+    </div>
+  </div>
+
+  <script src="master.js"></script>
+</body>
+</html>

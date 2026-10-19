@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="searching">Zoeken naar een master op het lokale netwerk…\n(Hij moet op hetzelfde wifi zitten als de computer.)</string>
+    <string name="found">Gevonden masters:</string>
+    <string name="manual">Of voer het adres handmatig in</string>
+    <string name="hint">bijv. 192.168.1.20:8080</string>
+    <string name="connect">Verbinden</string>
+    <string name="no_webview">Android System WebView is niet geïnstalleerd.</string>
+    <string name="enter_address">Voer een adres in.</string>
+    <string name="unreachable">De master is op dit adres niet bereikbaar.</string>
+    <string name="render_gone">De weergave is gestopt, opnieuw verbinden…</string>
+</resources>

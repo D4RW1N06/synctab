@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="searching">Recherche d\'un maître sur le réseau local…\n(Il doit être sur le même Wi-Fi que l\'ordinateur.)</string>
+    <string name="found">Maîtres trouvés :</string>
+    <string name="manual">Ou saisis l\'adresse manuellement</string>
+    <string name="hint">p. ex. 192.168.1.20:8080</string>
+    <string name="connect">Se connecter</string>
+    <string name="no_webview">Android System WebView n\'est pas installé.</string>
+    <string name="enter_address">Saisis une adresse.</string>
+    <string name="unreachable">Le maître est injoignable à cette adresse.</string>
+    <string name="render_gone">L\'affichage s\'est arrêté, reconnexion…</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="searching">Ricerca di un master nella rete locale…\n(Deve essere sulla stessa rete Wi-Fi del computer.)</string>
+    <string name="found">Master trovati:</string>
+    <string name="manual">Oppure inserisci l\'indirizzo manualmente</string>
+    <string name="hint">es. 192.168.1.20:8080</string>
+    <string name="connect">Connetti</string>
+    <string name="no_webview">Android System WebView non è installato.</string>
+    <string name="enter_address">Inserisci un indirizzo.</string>
+    <string name="unreachable">Il master non è raggiungibile a questo indirizzo.</string>
+    <string name="render_gone">Il visualizzatore si è arrestato, riconnessione…</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="searching">ローカルネットワークでマスターを検索中…\n（パソコンと同じ Wi-Fi に接続してください）</string>
+    <string name="found">見つかったマスター：</string>
+    <string name="manual">または手動でアドレスを入力</string>
+    <string name="hint">例：192.168.1.20:8080</string>
+    <string name="connect">接続</string>
+    <string name="no_webview">Android System WebView がインストールされていません。</string>
+    <string name="enter_address">アドレスを入力してください。</string>
+    <string name="unreachable">このアドレスではマスターに接続できません。</string>
+    <string name="render_gone">ビューアが停止しました。再接続しています…</string>
+</resources>

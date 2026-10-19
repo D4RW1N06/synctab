@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="searching">Szukam urządzenia głównego w sieci lokalnej…\n(Musi być w tej samej sieci Wi-Fi co komputer.)</string>
+    <string name="found">Znalezione urządzenia główne:</string>
+    <string name="manual">Lub wpisz adres ręcznie</string>
+    <string name="hint">np. 192.168.1.20:8080</string>
+    <string name="connect">Połącz</string>
+    <string name="no_webview">Nie zainstalowano Android System WebView.</string>
+    <string name="enter_address">Wpisz adres.</string>
+    <string name="unreachable">Nie można połączyć się z urządzeniem głównym pod tym adresem.</string>
+    <string name="render_gone">Widok się zatrzymał, łączę ponownie…</string>
+</resources>

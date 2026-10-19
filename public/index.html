@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>SyncTab</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="i18n.js"></script>
+  <script src="/lib/alphatab/alphaTab.min.js"></script>
+  <script src="viewer.js"></script>
+  <script src="audio-engine.js"></script>
+</head>
+<body>
+  <div class="overlay" id="join">
+    <div class="card">
+      <h1>SyncTab</h1>
+      <div class="muted" data-i18n="join.prompt">Enter your name and tap Join.</div>
+      <input type="text" id="name" data-i18n-placeholder="join.namePlaceholder" placeholder="Name (e.g. Guitar – Pete)" maxlength="40" autocomplete="off">
+      <button class="primary" id="go" data-i18n="join.button">Join</button>
+      <select id="lang-join" data-i18n-title="common.language"></select>
+    </div>
+  </div>
+
+  <div class="bar" id="bar">
+    <span class="dot" id="conn" data-i18n-title="client.connection"></span>
+    <span class="title grow" id="title">Waiting for the master…</span>
+    <select id="track" data-i18n-title="client.trackTitle" disabled></select>
+    <button id="zoomOut" data-i18n-title="client.zoomOut">A−</button>
+    <button id="zoomIn" data-i18n-title="client.zoomIn">A+</button>
+    <button id="settings" data-i18n-title="client.settings">⚙</button>
+
+    <div class="panel hidden" id="panel">
+      <label><input type="checkbox" id="sound"> <span data-i18n="sound.enable">Enable sound</span></label>
+      <div class="row">
+        <input type="range" id="sound-vol" min="0" max="100" value="80" data-i18n-title="sound.volume" style="width:100%">
+      </div>
+      <div class="muted" id="sound-status" style="font-size:12px"></div>
+      <ul class="list tracks mix" id="mix"></ul>
+      <div class="muted" id="mix-hint" style="font-size:12px" data-i18n="mix.hint">Tick the tracks you want to hear. The S button solos a track.</div>
+      <label><input type="checkbox" id="metro"> <span data-i18n="metro.label">Metronome</span></label>
+      <div class="row">
+        <select id="sound-type" data-i18n-title="click.sound"></select>
+        <input type="range" id="click-vol" min="0" max="100" value="80" data-i18n-title="sound.volume" style="width:110px">
+      </div>
+      <label><input type="checkbox" id="countin-audio"> <span data-i18n="countin.audio">Count-in sound</span></label>
+      <div>
+        <div class="row"><span data-i18n="shift.label">Timing correction</span><span id="shift-val">0 ms</span></div>
+        <input type="range" id="shift" min="-300" max="300" step="5" value="0" style="width:100%">
+        <div class="muted" style="font-size:12px" data-i18n="shift.hint">If the cursor or click is late, drag to the right (brings it earlier).</div>
+        <div class="muted" id="sync-status" style="font-size:12px;margin-top:4px"></div>
+      </div>
+      <div class="row">
+        <span data-i18n="view.label">View</span>
+        <select id="profile">
+          <option value="tab" data-i18n="view.tab">Tab</option>
+          <option value="scoretab" data-i18n="view.scoretab">Score + Tab</option>
+          <option value="score" data-i18n="view.score">Score</option>
+        </select>
+      </div>
+      <div class="row">
+        <span data-i18n="theme.label">Theme</span>
+        <button id="theme" data-i18n="theme.toggle">◐ Light / dark</button>
+      </div>
+      <div class="row">
+        <span data-i18n="lang.title">Language</span>
+        <select id="lang"></select>
+      </div>
+      <button id="switch-server" class="hidden" data-i18n="client.switchServer">Choose another master</button>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="viewport" id="viewport">
+      <div class="score" id="score"></div>
+      <div class="empty" id="empty" data-i18n="client.empty">The master hasn't started a song yet.</div>
+    </div>
+  </div>
+  <div class="countin" id="countin-view"></div>
+
+  <script src="client.js"></script>
+</body>
+</html>

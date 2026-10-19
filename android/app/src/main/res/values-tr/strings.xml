@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="searching">Yerel ağda ana cihaz aranıyor…\n(Bilgisayarla aynı Wi-Fi\'de olmalı.)</string>
+    <string name="found">Bulunan ana cihazlar:</string>
+    <string name="manual">Veya adresi elle gir</string>
+    <string name="hint">ör. 192.168.1.20:8080</string>
+    <string name="connect">Bağlan</string>
+    <string name="no_webview">Android System WebView yüklü değil.</string>
+    <string name="enter_address">Bir adres gir.</string>
+    <string name="unreachable">Ana cihaza bu adresten ulaşılamıyor.</string>
+    <string name="render_gone">Görüntüleyici durdu, yeniden bağlanılıyor…</string>
+</resources>

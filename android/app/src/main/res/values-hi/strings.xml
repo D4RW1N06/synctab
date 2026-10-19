@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="searching">लोकल नेटवर्क पर मास्टर खोजा जा रहा है…\n(यह कंप्यूटर वाले Wi-Fi पर ही होना चाहिए।)</string>
+    <string name="found">मिले हुए मास्टर:</string>
+    <string name="manual">या पता खुद लिखें</string>
+    <string name="hint">जैसे 192.168.1.20:8080</string>
+    <string name="connect">कनेक्ट करें</string>
+    <string name="no_webview">Android System WebView इंस्टॉल नहीं है।</string>
+    <string name="enter_address">कोई पता लिखें।</string>
+    <string name="unreachable">इस पते पर मास्टर तक नहीं पहुँचा जा सकता।</string>
+    <string name="render_gone">व्यूअर रुक गया, दोबारा कनेक्ट हो रहा है…</string>
+</resources>

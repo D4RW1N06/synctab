@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="searching">جارٍ البحث عن جهاز رئيسي في الشبكة المحلية…\n(يجب أن يكون على نفس شبكة Wi-Fi الخاصة بالكمبيوتر.)</string>
+    <string name="found">الأجهزة الرئيسية التي تم العثور عليها:</string>
+    <string name="manual">أو أدخل العنوان يدويًا</string>
+    <string name="hint">مثل 192.168.1.20:8080</string>
+    <string name="connect">اتصال</string>
+    <string name="no_webview">تطبيق Android System WebView غير مثبّت.</string>
+    <string name="enter_address">أدخل عنوانًا.</string>
+    <string name="unreachable">تعذّر الوصول إلى الجهاز الرئيسي عبر هذا العنوان.</string>
+    <string name="render_gone">توقف العارض، جارٍ إعادة الاتصال…</string>
+</resources>

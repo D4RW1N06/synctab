@@ -1,0 +1,22 @@
+# dependencies and build output (recreated by `npm install` / `npm run dist`)
+node_modules/
+dist/
+
+# Android build output and machine-specific files
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+*.iml
+.idea/
+
+# editor / OS / logs
+.vscode/
+*.log
+Thumbs.db
+.DS_Store
+
+# never commit signing keys or secrets
+*.jks
+*.keystore
+.env

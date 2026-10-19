@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="searching">正在本地网络中查找主机…\n（需与电脑处于同一 Wi-Fi）</string>
+    <string name="found">找到的主机：</string>
+    <string name="manual">或手动输入地址</string>
+    <string name="hint">例如 192.168.1.20:8080</string>
+    <string name="connect">连接</string>
+    <string name="no_webview">未安装 Android System WebView。</string>
+    <string name="enter_address">请输入地址。</string>
+    <string name="unreachable">无法通过此地址访问主机。</string>
+    <string name="render_gone">查看器已停止，正在重新连接…</string>
+</resources>
