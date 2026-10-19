@@ -50,6 +50,7 @@
   let rev = 0;
   let seekedRev = -1;
   let ws = null;
+  let deviceName = '';
   let cancelCountIn = null;
 
   const clock = createClock((m) => ws && ws.send(m));
@@ -76,8 +77,8 @@
 
   $('name').value = store('client.name') || '';
   $('go').onclick = () => {
-    const name = $('name').value.trim() || tr('common.device');
-    store('client.name', name);
+    deviceName = $('name').value.trim() || tr('common.device');
+    store('client.name', deviceName); // csak az előtöltéshez; a küldött név a változóból jön (több lap ugyanabban a böngészőben)
     $('join').classList.add('hidden');
     clicker.ensure(); // a koppintás engedélyezi a böngészőben a hangot
     ws = connect('/ws', {
@@ -103,7 +104,7 @@
   $('name').addEventListener('keydown', (e) => e.key === 'Enter' && $('go').click());
 
   function sendProfile() {
-    ws && ws.send({ type: 'profile', name: store('client.name'), track: selectedTrack ? selectedTrack.name : null, rtt: clock.rtt() });
+    ws && ws.send({ type: 'profile', name: deviceName, track: selectedTrack ? selectedTrack.name : null, rtt: clock.rtt() });
   }
   function showSyncStatus() {
     $('sync-status').textContent = clock.ready() ? tr('sync.ok', { ms: clock.rtt().toFixed(1) }) : tr('sync.tuning');

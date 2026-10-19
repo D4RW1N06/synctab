@@ -71,7 +71,7 @@ input[type='range'] { accent-color: var(--accent); }
   border-bottom: 1px solid var(--line);
 }
 .bar .grow { flex: 1; min-width: 0; }
-.bar .title { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bar .title { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 160px; }
 .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--bad); display: inline-block; }
 .dot.ok { background: var(--ok); }
 

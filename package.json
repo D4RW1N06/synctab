@@ -8,7 +8,7 @@
     "dist": "electron-builder --win nsis",
     "check-lang": "node tools/check-lang.js"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "type": "commonjs",
   "dependencies": {
     "@coderline/alphatab": "^1.8.4",
@@ -37,7 +37,18 @@
     },
     "nsis": {
       "oneClick": true,
-      "perMachine": false
+      "perMachine": false,
+      "artifactName": "SyncTab-Setup-${version}.${ext}"
     }
-  }
+  },
+  "author": "SyncTab contributors",
+  "keywords": [
+    "guitar-pro",
+    "tablature",
+    "band",
+    "rehearsal",
+    "synchronization",
+    "alphatab",
+    "electron"
+  ]
 }
